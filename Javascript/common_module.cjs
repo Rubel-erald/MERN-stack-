@@ -11,33 +11,35 @@
 // examples;
 // common js
 
-function add (x,y){
-    console.log(`the sum of ${x} and ${y} is ${x+y}`);
-}
-function sub (x,y){
-    console.log(`the differents between ${x} and ${y} is ${x-y}`);
-}
-module.exports = {
-    add,
-    sub
-}
+// function add (x,y){
+//     console.log(`the sum of ${x} and ${y} is ${x+y}`);
+// }
+// function sub (x,y){
+//     console.log(`the differents between ${x} and ${y} is ${x-y}`);
+// }
+// module.exports = {
+//     add,
+//     sub
+// }
 
 // another file (testing.js)
 // 2 ways to export 
 
-const math = require("./")// file name
+// const math = require("./")// file name
 // behind the code
-math = {
-    add,
-    sub
-}
+// math = {
+ // add,
+ // sub
+// }
 // calling Object
-math.add(2,2)
+// math.add(2,2)
+
+
 
 
 // another way 
 // destructing
-const {add,sub} = require("./") //property name and file name
+// const {add,sub} = require("./") //property name and file name
 // behind the code
 // module.exports = {
 //     add,
@@ -50,6 +52,43 @@ const {add,sub} = require("./") //property name and file name
 // const { add, sub } = obj;
 // const add = obj.add;
 // const sub = obj.sub;
+
+
+
+// Exports one by one
+
+// exports.sum = function(a,b){
+//     console.log(`the sum of 2 numbers is ${a + b}`)
+// };
+
+function sum(x , y) {
+    console.log(x + y);
+}
+const person = {
+    name : "rubel",
+    age : 23
+}
+
+function add(a,b){
+    console.log(a + b)
+}
+
+// module.exports = {
+//     sum,
+//     person,
+//     add
+// }
+
+exports.first = sum;
+exports.second = person;
+exports.third = add;
+
+
+
+
+
+
+
 
 
 
