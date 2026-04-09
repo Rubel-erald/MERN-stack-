@@ -14,13 +14,20 @@
 // result.add(2,3);
 
 
-const {first : kumar,second,third} = require("./Javascript/common_module.cjs");
+// const {first : kumar,second,third} = require("./Javascript/common_module.cjs");
 // console.log(result.second);
 // result.first(1,1);
 // result.third(2,2);
 
-kumar(7,7);
-console.log(second);
-third(3,3);
+// kumar(7,7);
+// console.log(second);
+// third(3,3);
 
+// import {num} from "./Javascript/common_module.js";
+// console.log(num);
+// import {add} from "./Javascript/common_module.js";
+// add(4,4);
 
+import {num , add} from "./Javascript/common_module.js";
+console.log(num);
+add(7,7);
