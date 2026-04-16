@@ -1,6 +1,6 @@
 // ES6 features
 // => let , const , var
-// => arrow function 
+// => arrow function
 // => hoisting
 // => for..of for..in (object.key(),object.value(),object.entries())
 // => spread operator, rest operator
@@ -12,7 +12,6 @@
 // => promises
 // => enhanced object literal
 
-
 // for..of for..in
 // for...of (values)
 // Used for arrays / iterable values
@@ -21,8 +20,6 @@
 // for(let a of fruits1){
 //     console.log(a);
 // }
-
-
 
 //  for...in (keys / index)
 // Used for objects / array indexes
@@ -37,7 +34,6 @@
 // for (let key in obj) {
 //   console.log(key, obj[key]);
 // }
-
 
 // In array (of) used to get values of array
 // In array (in) used to get indexes of array
@@ -74,5 +70,53 @@
 
 // 👉 "of = values"
 // 👉 "in = index / keys"
+
+// => spread operator, rest operator
+// 1.spread operator used to open / expand values
+
+// example
+// let arr1 = [1,2];
+// let arr2 = [...arr1,3,4,5];
+// console.log(arr2);
+// Output:
+// [1, 2, 3, 4]
+
+// example Copy Array
+// let a = [10,20];
+// let b = [...a];
+// console.log(b);
+
+// example 0bject
+// let obj1 = {
+//   name: "rubel",
+//   place: "coimbatore",
+// };
+// let obj2 = {
+//   ...obj1,
+//   age: 23,
+// };
+// console.log(obj2);  //{ name: 'rubel', place: 'coimbatore', age: 23 }
+
+// example combine object
+// let a = { x: 1 };
+// let b = { y: 2 };
+
+// let c = { ...a, ...b };
+
+// 2.Rest operatoe(collect) used to gather multiple values into one
+
+// example function
+// function sum (...numbers){
+//     console.log(numbers)
+// }
+// sum(1,2,3,4,5);
+
+// output [ 1, 2, 3, 4, 5 ]
+
+// example real sum
+// function sum(...numbers) {
+//   return numbers.reduce((a, b) => a + b, 0);
+// }
+// console.log(sum(1,2,3,4,5)); //15
 
 
