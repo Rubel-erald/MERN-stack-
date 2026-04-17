@@ -68,8 +68,11 @@
 
 // 🧠 Easy Memory Trick
 
-// 👉 "of = values"
-// 👉 "in = index / keys"
+// => "of = values"
+// => "in = index / keys"
+
+
+
 
 // => spread operator, rest operator
 // 1.spread operator used to open / expand values
@@ -103,6 +106,9 @@
 
 // let c = { ...a, ...b };
 
+
+
+
 // 2.Rest operatoe(collect) used to gather multiple values into one
 
 // example function
@@ -118,5 +124,62 @@
 //   return numbers.reduce((a, b) => a + b, 0);
 // }
 // console.log(sum(1,2,3,4,5)); //15
+
+
+
+
+// => template literal
+// let name = "Rubel";
+// let age = 23;
+
+// console.log(`My name is ${name} and I am ${age} years old`);
+
+
+
+
+//  => Default Parameters
+// function greet(name = "Guest") {
+//   console.log(`Hello ${name}`);
+// }
+
+// greet();        // Hello Guest
+// greet("Rubel"); // Hello Rubel
+
+
+
+
+// => Destructuring
+// let arr = [10, 20, 30];
+
+// let [a, b, c] = arr;
+
+// console.log(a, b, c);
+
+
+// let person = { name: "rubel", age: 23 };
+
+// let { name, age } = person;
+
+// console.log(name, age);
+
+
+
+// => Enhanced Object Literal
+// let name = "Rubel";
+// let age = 23;
+
+// let person = {
+//   name, // same as name: name
+//   age,
+
+//   greet() {
+//     console.log("Hello");
+//   }
+// };
+
+// console.log(person);
+// person.greet();
+
+
 
 
