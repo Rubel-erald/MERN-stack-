@@ -36,9 +36,9 @@
 //     saturday
 // }
 // let result:days = days.monday;
-// console.log(result); 1 
+// console.log(result); 1
 
-// 8.object 
+// 8.object
 // let user : {
 //     name : string,
 //     age : number,
@@ -63,6 +63,18 @@
 // const p1 = new classname("rubel", true);
 // console.log(p1);
 
+// 10.function
+// function sum(a: number, b: number): number {
+//   return a + b;
+// }
+// console.log(sum(2,2)); //4
 
+// function without return
+// function greet(name: string): void {
+//   console.log("Hello " + name);
+// }
+// void = no return
 
-
+// arrow function
+// const greet = (a: number, b: number): number => a + b;
+// console.log(greet(3,3));

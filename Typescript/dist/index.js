@@ -30,8 +30,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //     saturday
 // }
 // let result:days = days.monday;
-// console.log(result); 1 
-// 8.object 
+// console.log(result); 1
+// 8.object
 // let user : {
 //     name : string,
 //     age : number,
@@ -43,14 +43,28 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //     place : "coimbatore",
 //     status : true
 // }
-class classname {
-    name;
-    age;
-    constructor(a, b) {
-        this.name = a;
-        this.age = b;
-    }
-}
-const p1 = new classname("rubel", true);
-console.log(p1);
+// 9.class
+// class classname {
+//     name: string;
+//     age: boolean;
+//     constructor(a: string, b: boolean) {
+//         this.name = a;
+//         this.age = b;
+//     }
+// }
+// const p1 = new classname("rubel", true);
+// console.log(p1);
+// 10.function
+// function sum(a: number, b: number): number {
+//   return a + b;
+// }
+// console.log(sum(2,2)); //4
+// function without return
+// function greet(name: string): void {
+//   console.log("Hello " + name);
+// }
+// void = no return
+const greet = (a, b) => a + b;
+console.log(greet(3, 3));
+console.log(greet);
 //# sourceMappingURL=index.js.map
