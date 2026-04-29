@@ -44,16 +44,16 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //     status : true
 // }
 // 9.class
-// class classname {
-//     name: string;
-//     age: boolean;
-//     constructor(a: string, b: boolean) {
-//         this.name = a;
-//         this.age = b;
-//     }
-// }
-// const p1 = new classname("rubel", true);
-// console.log(p1);
+class classname {
+    name;
+    age;
+    constructor(a, b) {
+        this.name = a;
+        this.age = b;
+    }
+}
+const p1 = new classname("rubel", false);
+console.log(p1);
 // 10.function
 // function sum(a: number, b: number): number {
 //   return a + b;
@@ -64,7 +64,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //   console.log("Hello " + name);
 // }
 // void = no return
-const greet = (a, b) => a + b;
-console.log(greet(3, 3));
-console.log(greet);
+// arrow function
+// const greet = (a: number, b: number): number => a + b;
+// console.log(greet(3,3));
 //# sourceMappingURL=index.js.map

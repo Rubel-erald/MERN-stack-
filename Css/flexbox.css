@@ -1,0 +1,86 @@
+/* flex container properties (parent) */
+.main {
+  background-color: red;
+  height: 400px;
+  display: flex;
+  /* display: inline-flex; */
+
+  /* flex directions and its properties */
+  /* flex-direction: column; */
+  /* flex-direction: row; */
+  /* flex-direction: column-reverse; */
+  /* flex-direction: row-reverse; */
+
+  /* Justify content */
+  /* justify-content: flex-start; */
+  /* justify-content: flex-end; */
+  /* justify-content: center; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  /* justify-content: space-evenly; */
+  /* justify-content: start; */
+  /* justify-content: end; */
+  /* justify-content: left; */
+  /* justify-content: right; */
+
+  /* align items */
+  /* align-items: stretch; (if the content doesn't have height it will work) */
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+  /* align-items: center; */
+  /* align-items: baseline;  */
+
+  /* Flex wrap */
+  /* flex-wrap: nowrap; */
+  /* flex-wrap: wrap; */
+  /* flex-wrap: wrap-reverse; */
+
+  /* Flex flow */
+  /* flex-flow: row; */
+  /* flex-flow: column; */
+  /* flex-flow: row-reverse; */
+  /* flex-flow: column-reverse; */
+
+  /* flex-flow: row nowrap; */
+  /* flex-flow: row wrap; */
+  /* flex-flow: row wrap-reverse; */
+
+  /* flex-flow: column nowrap; */
+  /* flex-flow: column wrap; */
+  /* flex-flow: column wrap-reverse; */
+}
+.one {
+  height: 70px;
+  width: 70px;
+  background-color: blue;
+  color: aliceblue;
+  text-align: center;
+}
+.two {
+  height: 70px;
+  width: 70px;
+  background-color: darkblue;
+  color: aliceblue;
+  text-align: center;
+}
+.three {
+  height: 70px;
+  width: 70px;
+  background-color: rgb(113, 113, 174);
+  color: aliceblue;
+  text-align: center;
+}
+.four {
+  height: 70px;
+  width: 70px;
+  background-color: rgb(105, 105, 236);
+  color: aliceblue;
+  text-align: center;
+}
+.five {
+  height: 70px;
+  width: 70px;
+  background-color: rgb(8, 8, 88);
+  color: aliceblue;
+  text-align: center;
+}

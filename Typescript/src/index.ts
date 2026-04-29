@@ -53,14 +53,14 @@
 
 // 9.class
 // class classname {
-//     name: string;
-//     age: boolean;
-//     constructor(a: string, b: boolean) {
-//         this.name = a;
-//         this.age = b;
-//     }
+//   name: string;
+//   age: boolean;
+//   constructor(a: string, b: boolean) {
+//     this.name = a;
+//     this.age = b;
+//   }
 // }
-// const p1 = new classname("rubel", true);
+// const p1: classname = new classname("rubel", false);
 // console.log(p1);
 
 // 10.function

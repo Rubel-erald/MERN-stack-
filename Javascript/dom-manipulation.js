@@ -27,8 +27,8 @@
 // </ul>
 
 // let listitems = window.document.getElementsByTagName("ul")[0].children;
-// for(let i = 0 ; i < listitems.length ; i++){
-//     console.log(listitems[i].textContent);
+// for (let i = 0 ; i < listitems.length ; i++){
+//     console.log(listitems[i].textContent)
 // }
 
 // changing content using js
