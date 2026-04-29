@@ -71,9 +71,6 @@
 // => "of = values"
 // => "in = index / keys"
 
-
-
-
 // => spread operator, rest operator
 // 1.spread operator used to open / expand values
 
@@ -106,9 +103,6 @@
 
 // let c = { ...a, ...b };
 
-
-
-
 // 2.Rest operatoe(collect) used to gather multiple values into one
 
 // example function
@@ -125,17 +119,11 @@
 // }
 // console.log(sum(1,2,3,4,5)); //15
 
-
-
-
 // => template literal
 // let name = "Rubel";
 // let age = 23;
 
 // console.log(`My name is ${name} and I am ${age} years old`);
-
-
-
 
 //  => Default Parameters
 // function greet(name = "Guest") {
@@ -145,9 +133,6 @@
 // greet();        // Hello Guest
 // greet("Rubel"); // Hello Rubel
 
-
-
-
 // => Destructuring
 // let arr = [10, 20, 30];
 
@@ -155,14 +140,11 @@
 
 // console.log(a, b, c);
 
-
 // let person = { name: "rubel", age: 23 };
 
 // let { name, age } = person;
 
 // console.log(name, age);
-
-
 
 // => Enhanced Object Literal
 // let name = "Rubel";
@@ -180,6 +162,38 @@
 // console.log(person);
 // person.greet();
 
+// promises
 
+// creating a Promise
+// const swiggy = new Promise((resolve, reject) => {
+//   let hotel = false;
+//   if (hotel) {
+//     resolve();
+//   } else {
+//     reject();
+//   }
+// });
+// swiggy.then(() => {
+//   console.log("hotel open");
+// });
+// swiggy.catch(() => {
+//   console.log("hotel closed");
+// });
 
-
+// const zomoto = new Promise((resolve, reject) => {
+//   let hotel = true;
+//   console.log("checking hotels nearby");
+//   setTimeout(() => {
+//     if (hotel) {
+//       resolve("hotel founded");
+//     } else {
+//       reject("hotel not founded");
+//     }
+//   }, 3000);
+// });
+// zomoto.then((a) => {
+//   console.log(a);
+// });
+// zomoto.catch((b) => {
+//   console.log(b);
+// });
