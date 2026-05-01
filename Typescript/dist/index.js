@@ -68,15 +68,22 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // const greet = (a: number, b: number): number => a + b;
 // console.log(greet(3,3));
 // function prototyping
-function Person(a, b) {
+// function Person(this: any, a: string, b: number) {
+//   this.fullname = a;
+//   this.dob = b;
+// }
+// // prototype method
+// (Person as any).prototype.calcage = function (): number {
+//   return this.dob * 10;
+// };
+// const person2 = new (Person as any)("rubel", 23);
+// console.log(person2);
+// console.log(person2.calcage());
+function Person(a, b, c) {
     this.fullname = a;
-    this.dob = b;
+    this.age = b;
+    this.place = c;
 }
-// prototype method
-Person.prototype.calcage = function () {
-    return this.dob * 10;
-};
-const person2 = new Person("rubel", 23);
-console.log(person2);
-console.log(person2.calcage());
+const details = new Person("rubel", 23, "cbe");
+console.log(details);
 //# sourceMappingURL=index.js.map
