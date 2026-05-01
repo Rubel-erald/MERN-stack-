@@ -197,3 +197,70 @@
 // zomoto.catch((b) => {
 //   console.log(b);
 // });
+
+// async and await
+// async function returns a Promise
+// await will wait untill promise complets
+
+// creating a async function
+// async function zomoto() {
+//   return "hotel found";
+// }
+// zomoto().then((data) => {
+//   console.log(data);
+// });
+
+// async function swiggy() {
+//   throw "hotel found";
+// }
+// swiggy().catch((data) => {
+//   console.log(data);
+// });
+
+// return will (retun resolve() we can use .then)
+// throw will (return reject() we can use .catch)
+
+// 2.await
+// function hotelsearch() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve("hotel found");
+//     }, 5000);
+//   });
+// }
+// async function zomoto() {
+//   console.log("searching...");
+//   const result = await hotelsearch();
+//   console.log(result);
+// }
+// zomoto();
+
+// function result() {
+//   return new Promise((resolve, reject) => {
+//     let marks = 60;
+//     if (marks >= 35) {
+//       resolve();
+//     } else {
+//       reject();
+//     }
+//   });
+// }
+
+// async function getdata() {
+//   console.log("loading");
+//   const data = await result();
+//   console.log(data);
+// }
+// getdata();
+
+// async function getdata() {
+//   try {
+//     console.log("loading");
+//     const data = await result();
+//   } catch (err) {
+//     console.log(err);
+//   }
+// }
+// getdata();
+
+// resolve("pass") passing message 
