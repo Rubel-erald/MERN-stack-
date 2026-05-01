@@ -51,6 +51,8 @@
 //     status : true
 // }
 
+
+
 // 9.class
 // class classname {
 //   name: string;
@@ -63,11 +65,15 @@
 // const p1: classname = new classname("rubel", false);
 // console.log(p1);
 
+
+
 // 10.function
 // function sum(a: number, b: number): number {
 //   return a + b;
 // }
 // console.log(sum(2,2)); //4
+
+
 
 // function without return
 // function greet(name: string): void {
@@ -78,3 +84,21 @@
 // arrow function
 // const greet = (a: number, b: number): number => a + b;
 // console.log(greet(3,3));
+
+
+
+// function prototyping
+// function Person(this: any, a: string, b: number) {
+//   this.fullname = a;
+//   this.dob = b;
+// }
+
+// // prototype method
+// (Person as any).prototype.calcage = function (): number {
+//   return this.dob * 10;
+// };
+
+// const person2 = new (Person as any)("rubel", 23);
+
+// console.log(person2);
+// console.log(person2.calcage());
